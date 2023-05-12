@@ -1,14 +1,13 @@
 import "./InputLogin.css";
 
-const InputLogin = ({ onChange, value, children }) => {
+const InputLogin = ({ onChange, value, type }) => {
   return (
     <>
       <input
-        placeholder={children}
         onChange={onChange}
         value={value}
         className="input-login"
-        type="text"
+        type={type}
       />
     </>
   );

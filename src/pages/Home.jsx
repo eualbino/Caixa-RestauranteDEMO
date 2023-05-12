@@ -9,6 +9,7 @@ import TextCadastrar from "../components/TextCadastrar";
 const Home = () => {
   const [InputValueEmail, setInputValueEmail] = useState("");
   const [InputValuePassword, setInputValuePassword] = useState("");
+  const InputType = ("password");
 
   const InputChangeEmail = (e) => {
     setInputValueEmail(e.target.value);
@@ -40,6 +41,7 @@ const Home = () => {
           <InputLogin
             onChange={InputChangePassword}
             value={InputValuePassword}
+            type={InputType}
           ></InputLogin>
         </div>
 
